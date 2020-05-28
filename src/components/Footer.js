@@ -3,10 +3,10 @@ import React from "react";
 function Footer(){
 
     const currentYear = new Date().getFullYear()
-
+        console.log(currentYear)
     return(
-        <footer>
-            <p>Beth Arnold copyright © {currentYear} </p>
+        <footer className="footer">
+            <p>copyright © {currentYear} </p>
         </footer>
     )
 };
