@@ -7,7 +7,8 @@ function Header(){
         <h1>
             <Navbar />
         </h1>
-    </header>)
+    </header>
+    )
 };
 
 export default Header;
