@@ -6,7 +6,7 @@ function Footer(){
         console.log(currentYear)
     return(
         <footer className="footer">
-            <p>copyright © {currentYear} </p>
+            <p>copyright © {currentYear} Beth Arnold </p>
         </footer>
     )
 };

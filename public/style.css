@@ -2,6 +2,7 @@
 body {
     background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
     background-color: #383838;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* background-size: cover; */
   }
   
@@ -67,7 +68,7 @@ body {
     text-align: center;
     width: 250px;
   }
-  
+
   .footer {
     background: #900;
     bottom: 0;

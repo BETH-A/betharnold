@@ -8,7 +8,7 @@ function Jumbotron(){
         <div class="jumbotron">
             <div class="container">
                 <h1 class="display-3 text-secondary">
-                    Contact</h1>
+                    Portfolio</h1>
             </div>
         </div>
     )

@@ -10,7 +10,7 @@ function Navbar(){
         </button>
 
         <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul className="navbar-nav mr-auto">
+            {/* <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
                   <a className="nav-link" href="portfolio.html">Portfolio</a>
               </li>
@@ -22,7 +22,7 @@ function Navbar(){
                     <a className="nav-link" href="contact.html">Contact</a>
                     <span className="sr-only">(current)</span>
                 </li>
-            </ul>
+            </ul> */}
         </div>
         <a href="https://www.linkedin.com/in/beth-arnold-640170153/" target="_blank" className="img-link">
             <img src="images/icons/linkedIn_blackCircle.png" alt="LinkedIn Link" />
