@@ -1,4 +1,5 @@
 import React from 'react';
+import {Img} from "react-image";
 import { makeStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import clsx from 'clsx';
@@ -16,7 +17,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import CodeIcon from '@material-ui/icons/Code';
 import WebIcon from '@material-ui/icons/Web';
 import secretImg from "../images2/topSecretStamp.jpg";
-
+import SecretsIcons from "./images";
 
 
 // import { Link } from "react-router-dom";
@@ -135,6 +136,11 @@ export default function ProjectCard() {
             Packages used:
           </Typography>
           <Typography paragraph variant="body2" component="p">
+            <CardMedia 
+                className={classes.media}
+                image= {SecretsIcons}
+                title= "Secrets Icons"
+                />
             MongoDB, EJS, Express, Passport, and many other npm packages.
           </Typography>
         </CardContent>
