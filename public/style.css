@@ -96,6 +96,10 @@ body {
     height: 150px;
     padding-top: 70px;
   }
+
+  .MuiTypography-body2 {
+    color: #7f7f7f;
+  }
   
   .navbar {
     background-color: #900;
@@ -105,6 +109,9 @@ body {
     font-size: 40px;
   }
 
+  .navbar-light .navbar-brand {
+    color: #fff;
+  }
   .nav-link {
     font-size: 25px;
   }

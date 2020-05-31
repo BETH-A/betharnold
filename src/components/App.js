@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Jumbotron from "./Jumbotron";
+import Card from "./Card";
 
 function App(){
 
@@ -9,6 +10,7 @@ function App(){
         <div>
           <Header />
           <Jumbotron />
+          <Card />
           <Footer />
         </div>
       );  

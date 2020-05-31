@@ -1,37 +1,45 @@
 import React from "react";
+import ReactBootstrap, { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-function Navbar(){
+function CustomNavbar(){
     return (
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top">
-        <div className="navbar-brand" >Beth Arnold</div>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-            {/* <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
-                  <a className="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li className="nav-item">
-                    <a className="nav-link" href="index.html">About
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="contact.html">Contact</a>
-                    <span className="sr-only">(current)</span>
-                </li>
-            </ul> */}
-        </div>
-        <a href="https://www.linkedin.com/in/beth-arnold-640170153/" target="_blank" className="img-link">
-            <img src="images/icons/linkedIn_blackCircle.png" alt="LinkedIn Link" />
-        </a>
-        <a href="https://github.com/BETH-A" target="_blank" className="img-link">
-            <img src="images/icons/github_cat.png" alt="Github Link" />
-        </a>
-    </nav>
+        <Navbar default collapseOnSelect expand={'sm' | 'md' | 'lg' | 'xl'}>
+            <Navbar.Brand >
+                {/* <Link to="/">Beth Arnold</Link> */}
+                Beth Arnold
+            </Navbar.Brand>
+            <Navbar.Collapse>
+                <Nav pullRight>
+                    <NavItem eventKey={1} componentClass={Link} to="/">
+                        Portfolio
+                    </NavItem>
+                    <NavItem eventKey={2} componentClass={Link} to="/about">
+                        About Me
+                    </NavItem>
+                    <NavItem eventKey={3} componentClass={Link} to="/contact">
+                        Contact Me
+                    </NavItem>
+                </Nav>
+                
+            </Navbar.Collapse>
+            <div>
+                <Nav.Link key={1} href="https://www.linkedin.com/in/beth-arnold-640170153/" >
+                    <img src="/images/icons/linkedIn_blackCircle.png" alt="LinkedIn Link" />
+                </Nav.Link>
+                <Nav.Link key={2} href="https://github.com/BETH-A">
+                    <img src="/images/icons/github_cat.png" alt="Github Link" />
+                </Nav.Link>
+            </div>
+            
+        {/* <a href=target="_blank" className="img-link">
+            
+        </a> 
+         <a  target="_blank" className="img-link">
+            
+        </a> */}
+    </Navbar>
     )
 };
 
-export default Navbar;
+export default CustomNavbar;
