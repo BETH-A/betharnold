@@ -1,17 +1,9 @@
 import React from 'react';
 import {Img} from "react-image";
-import { makeStyles } from '@material-ui/core/styles';
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import PeopleCardFooter from '@mui-treasury/components/cardFooter/people';
+import { makeStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import Card from '@material-ui/core/Card';
-import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+import { Box, Button, Card, CardHeader, CardMedia, CardContent, CardActions, Collapse, Avatar, IconButton, Tooltip, Typography } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import CodeIcon from '@material-ui/icons/Code';
@@ -25,8 +17,6 @@ import SecretsIcons from "./images";
 // import FavoriteIcon from '@material-ui/icons/Favorite';
 // import ShareIcon from '@material-ui/icons/Share';
 // import "../cards";
-
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,9 +51,16 @@ const theme = createMuiTheme({
             textDecoration: "none"
           }
         }
+      },
+      MuiButton: {
+        root: {
+          '&:hover': {
+            backgroundColor: "#900"
+          }
+        }
       }
     }
-  })
+  });
 
 export default function ProjectCard() {
   const classes = useStyles();
@@ -81,11 +78,6 @@ export default function ProjectCard() {
             <WebIcon />
           </Avatar>
         }
-        // action={
-        //   <IconButton aria-label="settings">
-        //     <MoreVertIcon />
-        //   </IconButton>
-        // }
         title="Secrets"
         subheader="Web Application"
       />
@@ -100,24 +92,27 @@ export default function ProjectCard() {
         </Typography>
       </CardContent>
       <MuiThemeProvider theme={theme}>
-      <CardActions disableSpacing>
-        <IconButton aria-label="View code on Github" href="https://github.com/BETH-A/Secrets">
-            <CodeIcon />
-        </IconButton>
-        <IconButton aria-label="Live app" href="https://secrets-beth.herokuapp.com/">
-            View App
-        </IconButton>
-        <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-      </CardActions>
+        <CardActions disableSpacing>
+          <Tooltip title="View code">
+            <IconButton aria-label="View code on Github" href="https://github.com/BETH-A/Secrets">
+                <CodeIcon />
+            </IconButton>
+          </Tooltip>
+          
+          <Button aria-label="Live app" href="https://secrets-beth.herokuapp.com/">
+              View App
+          </Button>
+          <IconButton
+            className={clsx(classes.expand, {
+              [classes.expandOpen]: expanded,
+            })}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+          >
+            <ExpandMoreIcon />
+          </IconButton>
+        </CardActions>
       </MuiThemeProvider>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
@@ -130,19 +125,33 @@ export default function ProjectCard() {
             ability to login via their Google or Facebook accounts.
           </Typography>
           <Typography paragraph variant="body2" component="p">
-            This web app has been deployed on Heroku. https://secrets-beth.herokuapp.com/
+            This web app has been deployed on Heroku.
           </Typography>
-          <Typography paragraph variant="body2" component="p">
-            Packages used:
-          </Typography>
-          <Typography paragraph variant="body2" component="p">
-            <CardMedia 
-                className={classes.media}
-                image= {SecretsIcons}
-                title= "Secrets Icons"
-                />
-            MongoDB, EJS, Express, Passport, and many other npm packages.
-          </Typography>
+          
+          <Box>
+            {/* <CardMedia 
+                      className={classes.media}
+                      src= {SecretsIcons}
+                      title= "Secrets Icons"
+                      /> */}
+            {/* <PeopleCardFooter component="img" >{SecretsIcons}</PeopleCardFooter> */}
+            <Typography paragraph variant="body2" component="p">
+              Packages used:
+            </Typography>
+              <div>
+                <img src="" />
+
+              </div>
+            <Typography paragraph variant="body2" component="p">
+
+              
+              MongoDB, EJS, Express, Passport, and many other npm packages.
+
+
+              </Typography>
+            </Box>
+         
+      
         </CardContent>
       </Collapse>
     </Card>

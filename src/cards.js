@@ -1,3 +1,15 @@
+import React from "react";
+
+ function createCardIcons(icon) {
+  return (
+    <Card
+      key={icon.id}
+      name={icon.name}
+      img={icon.imgURL}
+    />
+  );
+};
+
 const cards = [
     {
         name: "Student Connect",
@@ -7,10 +19,10 @@ const cards = [
         description: "Web app created with a classmate to assist Students to connect with fellow classmates and utilizes a realtime chat feature.",
         role: "My role was setting up the Laravel framework, polishing frontend, and setting up the databases & the routes.",
         icons: [
-            image: url("./public/images/icons/icon-laravel.png"),
-            image: url("./public/images/icons/icon-php.png"),
-            image: url("./public/images/icons/icons8-vue-js-50.png"),
-            image: url("./public/images/icons/icon-mySQL.png")
+            image= url("./public/images/icons/icon-laravel.png"),
+            image= url("./public/images/icons/icon-php.png"),
+            image= url("./public/images/icons/icons8-vue-js-50.png"),
+            image= url("./public/images/icons/icon-mySQL.png")
         ]
     }
 ]

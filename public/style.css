@@ -80,6 +80,7 @@ body {
     text-align: center;
     width: 100%;
   }
+
   .iconRow {
     align-content: center;
     position:relative;
@@ -97,8 +98,21 @@ body {
     padding-top: 70px;
   }
 
+  .MuiButtonBase: {
+    root: {
+      '&:hover': {
+        backgroundColor: "#900",
+        textDecoration: "none"
+      }
+    }
+  }
+
   .MuiTypography-body2 {
     color: #7f7f7f;
+  }
+
+  .makeStyles-root-1 {
+    margin-bottom: 50px;
   }
   
   .navbar {
@@ -112,6 +126,7 @@ body {
   .navbar-light .navbar-brand {
     color: #fff;
   }
+
   .nav-link {
     font-size: 25px;
   }
