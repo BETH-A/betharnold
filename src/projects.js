@@ -1,30 +1,45 @@
 import React from "react";
+import WebIcon from '@material-ui/icons/Web';
+import secretImg from "./images2/topSecretStamp.jpg";
 
- function createCardIcons(icon) {
-  return (
-    <Card
-      key={icon.id}
-      name={icon.name}
-      img={icon.imgURL}
-    />
-  );
-};
 
-const cards = [
+
+const projects = [
     {
-        name: "Student Connect",
-        image: url(".public/assets/images/students1.jpg"),
-        imageAlt: "Student Connect Image",
-        link: url("https://beth-a.github.io/connect/"),
-        description: "Web app created with a classmate to assist Students to connect with fellow classmates and utilizes a realtime chat feature.",
+        id: 1,
+        avatarIcon: <WebIcon/>,
+        name: "Secrets",
+        subtitle: "Web Application",
+        image: {secretImg},
+        imageAlt: "Top Secret Image",
+        link: "https://beth-a.github.io/connect/",
+        description: "Secrets allows users to anonymously share secrets. This app was developed as a way to practice Authentication & Security practices.",
+
         role: "My role was setting up the Laravel framework, polishing frontend, and setting up the databases & the routes.",
         icons: [
-            image= url("./public/images/icons/icon-laravel.png"),
-            image= url("./public/images/icons/icon-php.png"),
-            image= url("./public/images/icons/icons8-vue-js-50.png"),
-            image= url("./public/images/icons/icon-mySQL.png")
+            // image= url("./public/images/icons/icon-laravel.png"),
+            // image= url("./public/images/icons/icon-php.png"),
+            // image= url("./public/images/icons/icons8-vue-js-50.png"),
+            // image= url("./public/images/icons/icon-mySQL.png")
         ]
-    }
+    },
+    {
+      id: 2,
+      avatarIcon: <WebIcon/>,
+      name: "Student Connect",
+      subtitle: "Web Application",
+      // image: url(".public/assets/images/students1.jpg"),
+      imageAlt: "Student Connect Image",
+      // link: url("https://beth-a.github.io/connect/"),
+      description: "Web app created with a classmate to assist Students to connect with fellow classmates and utilizes a realtime chat feature.",
+      role: "My role was setting up the Laravel framework, polishing frontend, and setting up the databases & the routes.",
+      icons: [
+          // image= url("./public/images/icons/icon-laravel.png"),
+          // image= url("./public/images/icons/icon-php.png"),
+          // image= url("./public/images/icons/icons8-vue-js-50.png"),
+          // image= url("./public/images/icons/icon-mySQL.png")
+      ]
+  }
 ]
 
 
@@ -141,3 +156,5 @@ const cards = [
               </div>
         </div>
       </div> */}
+
+export default projects;

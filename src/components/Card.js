@@ -3,7 +3,7 @@ import {Img} from "react-image";
 import PeopleCardFooter from '@mui-treasury/components/cardFooter/people';
 import { makeStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import { Box, Button, Card, CardHeader, CardMedia, CardContent, CardActions, Collapse, Avatar, IconButton, Tooltip, Typography } from '@material-ui/core';
+import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Grid, IconButton, Tooltip, Typography } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import CodeIcon from '@material-ui/icons/Code';
@@ -20,7 +20,7 @@ import SecretsIcons from "./images";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: 375,
     marginLeft: 25,
   },
   media: {
@@ -139,7 +139,7 @@ export default function ProjectCard() {
               Packages used:
             </Typography>
               <div>
-                <img src="" />
+                <img src={SecretsIcons}/>
 
               </div>
             <Typography paragraph variant="body2" component="p">
