@@ -81,6 +81,10 @@ body {
     width: 100%;
   }
 
+  /* .linkedIn {
+    float: right;
+  } */
+
   .iconRow {
     align-content: center;
     position:relative;
@@ -94,14 +98,14 @@ body {
   }
   
   .jumbotron {
-    height: 150px;
-    padding-top: 70px;
+    height: 120px;
+    padding-top: 20px;
   }
 
   .MuiButtonBase: {
     root: {
       '&:hover': {
-        backgroundColor: "#900",
+        backgroundColor: "#900";
         textDecoration: "none"
       }
     }
@@ -117,6 +121,7 @@ body {
   
   .navbar {
     background-color: #900;
+    height: 125px;
   }
   
   .navbar-brand {
@@ -129,6 +134,15 @@ body {
 
   .nav-link {
     font-size: 25px;
+  }
+
+  .navLinks {
+    display:flex; 
+    flex-direction:row;
+    /* float: right;
+    width: 100px;
+    position: relative;
+    display: inline; */
   }
   
   .quote {

@@ -23,11 +23,13 @@ function CustomNavbar(){
                 </Nav>
                 
             </Navbar.Collapse>
-            <div>
-                <Nav.Link key={1} href="https://www.linkedin.com/in/beth-arnold-640170153/" >
+            <div className="navLinks">
+                <Nav.Link className="justify-content-end" inline key={1} href="https://www.linkedin.com/in/beth-arnold-640170153/" >
                     <img src="/images/icons/linkedIn_blackCircle.png" alt="LinkedIn Link" />
                 </Nav.Link>
-                <Nav.Link key={2} href="https://github.com/BETH-A">
+            {/* </div>
+            <div> */}
+                <Nav.Link className="justify-content-end" inline key={2} href="https://github.com/BETH-A">
                     <img src="/images/icons/github_cat.png" alt="Github Link" />
                 </Nav.Link>
             </div>
