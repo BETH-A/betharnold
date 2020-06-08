@@ -27,19 +27,10 @@ function CustomNavbar(){
                 <Nav.Link className="justify-content-end" inline key={1} href="https://www.linkedin.com/in/beth-arnold-640170153/" >
                     <img src="/images/icons/linkedIn_blackCircle.png" alt="LinkedIn Link" />
                 </Nav.Link>
-            {/* </div>
-            <div> */}
                 <Nav.Link className="justify-content-end" inline key={2} href="https://github.com/BETH-A">
                     <img src="/images/icons/github_cat.png" alt="Github Link" />
                 </Nav.Link>
             </div>
-            
-        {/* <a href=target="_blank" className="img-link">
-            
-        </a> 
-         <a  target="_blank" className="img-link">
-            
-        </a> */}
     </Navbar>
     )
 };

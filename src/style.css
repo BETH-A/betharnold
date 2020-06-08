@@ -77,6 +77,17 @@ body {
     align-content: center;
     position:relative;
   }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .iconsImg {
+    padding-left: 15px;
+  }
   
   .img-fluid {
     float: left;
@@ -90,13 +101,13 @@ body {
     padding-top: 20px;
   }
 
-  .MuiButtonBase: {
-    root: {
-      '&:hover': {
-        backgroundColor: "#900";
-        textDecoration: "none"
-      }
-    }
+  .MuiButtonBase.root.&:hover {
+        background-color: #900;
+        text-decoration: none;
+  }
+
+  .MuiSvgIcon-root {
+    border: none;
   }
 
   .MuiTypography-body2 {
@@ -150,9 +161,7 @@ body {
     color: #fff;
     height: 525px;
     margin: 10px;
-    /* padding: 5px; */
     text-align: center;
-    /* width: 30%; */
   }
   
   .projectCardRow {

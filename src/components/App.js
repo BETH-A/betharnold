@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Jumbotron from "./Jumbotron";
 import Card from "./Card";
+import projects from "../projects";
 import "../style.css";
 
 function createCard(project) {
@@ -11,11 +12,14 @@ function createCard(project) {
       key={project.id}
       avatarIcon={project.avatarIcon}
       name={project.name}
-      img={project.image}
+      subtitle={project.subtitle}
+      image={project.image}
       imgAlt={project.imageAlt}
       link={project.link}
+      app={project.app}
       description={project.description}
       role={project.role}
+      deployed={project.deployed}
       icons={project.icons}
     />
   );
@@ -27,7 +31,8 @@ function App(){
         <div>
           <Header />
           <Jumbotron />
-          <Card />
+          {projects.map(createCard)}
+          {/* <Card /> */}
           <Footer />
         </div>
       );  

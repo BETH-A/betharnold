@@ -1,22 +1,17 @@
 import React from 'react';
-import {Img} from "react-image";
-import PeopleCardFooter from '@mui-treasury/components/cardFooter/people';
 import { makeStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Grid, IconButton, Tooltip, Typography } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
+import { CardDeck } from 'reactstrap';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import CodeIcon from '@material-ui/icons/Code';
 import WebIcon from '@material-ui/icons/Web';
 import secretImg from "../images2/topSecretStamp.jpg";
 import SecretsIcons from "./images";
+import projects from "../projects";
 
 
-// import { Link } from "react-router-dom";
-// import MoreVertIcon from '@material-ui/icons/MoreVert';
-// import FavoriteIcon from '@material-ui/icons/Favorite';
-// import ShareIcon from '@material-ui/icons/Share';
-// import "../cards";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -62,7 +57,7 @@ const theme = createMuiTheme({
     }
   });
 
-export default function ProjectCard() {
+export default function ProjectCard(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -71,6 +66,7 @@ export default function ProjectCard() {
   };
 
   return (
+    <CardDeck>
     <Card className={classes.root}>
       <CardHeader
         avatar={
@@ -78,28 +74,29 @@ export default function ProjectCard() {
             <WebIcon />
           </Avatar>
         }
-        title="Secrets"
-        subheader="Web Application"
-      />
+        title={props.name}
+        subheader={props.subtitle}
+      >
+      </CardHeader>
       <CardMedia
         className={classes.media}
-        image= {secretImg}
-        title="Top Secret Image"
+        image= {props.image}
+        title={props.imgAlt}
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-        Secrets allows users to anonymously share secrets. This app was developed as a way to practice Authentication & Security practices. 
+          {props.description}        
         </Typography>
       </CardContent>
       <MuiThemeProvider theme={theme}>
         <CardActions disableSpacing>
           <Tooltip title="View code">
-            <IconButton aria-label="View code on Github" href="https://github.com/BETH-A/Secrets">
+            <IconButton aria-label="View code on Github" href={props.link}>
                 <CodeIcon />
             </IconButton>
           </Tooltip>
           
-          <Button aria-label="Live app" href="https://secrets-beth.herokuapp.com/">
+          <Button aria-label="Live app" href={props.app}>
               View App
           </Button>
           <IconButton
@@ -118,42 +115,24 @@ export default function ProjectCard() {
         <CardContent>
           <Typography paragraph variant="body2" component="p">Role:</Typography>
           <Typography paragraph variant="body2" component="p">
-            This app went through many revisions while enhancing security on each commit to GitHub.
-            I started with encryping the password using Mongoose-Encryption then upgraded to Hashing. 
-            I then upgraded to Salting & Hashing passwords using bcrypt. Passport.js was used next to 
-            strenghten the security. I finally convert the app ths use OAuth, giving the user the 
-            ability to login via their Google or Facebook accounts.
+            {props.role}
           </Typography>
           <Typography paragraph variant="body2" component="p">
-            This web app has been deployed on Heroku.
+            {props.deployed}
           </Typography>
           
           <Box>
-            {/* <CardMedia 
-                      className={classes.media}
-                      src= {SecretsIcons}
-                      title= "Secrets Icons"
-                      /> */}
-            {/* <PeopleCardFooter component="img" >{SecretsIcons}</PeopleCardFooter> */}
             <Typography paragraph variant="body2" component="p">
               Packages used:
             </Typography>
-              <div>
-                <img src={SecretsIcons}/>
-
-              </div>
-            <Typography paragraph variant="body2" component="p">
-
-              
-              MongoDB, EJS, Express, Passport, and many other npm packages.
-
-
-              </Typography>
+              <SecretsIcons />         
             </Box>
+            
          
       
         </CardContent>
       </Collapse>
     </Card>
+    </CardDeck>
   );
 }

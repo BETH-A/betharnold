@@ -1,6 +1,8 @@
 import React from "react";
 import WebIcon from '@material-ui/icons/Web';
 import secretImg from "./images2/topSecretStamp.jpg";
+import SecretsIcons from "../src/components/images";
+
 
 
 
@@ -8,20 +10,17 @@ const projects = [
     {
         id: 1,
         avatarIcon: <WebIcon/>,
-        name: "Secrets",
+        name: "Secrets App",
         subtitle: "Web Application",
-        image: {secretImg},
+        image: <secretImg />,
         imageAlt: "Top Secret Image",
-        link: "https://beth-a.github.io/connect/",
+        link: "https://github.com/BETH-A/Secrets",
+        app: "https://secrets-beth.herokuapp.com/",
         description: "Secrets allows users to anonymously share secrets. This app was developed as a way to practice Authentication & Security practices.",
 
-        role: "My role was setting up the Laravel framework, polishing frontend, and setting up the databases & the routes.",
-        icons: [
-            // image= url("./public/images/icons/icon-laravel.png"),
-            // image= url("./public/images/icons/icon-php.png"),
-            // image= url("./public/images/icons/icons8-vue-js-50.png"),
-            // image= url("./public/images/icons/icon-mySQL.png")
-        ]
+        role: "This app went through many revisions while enhancing security on each commit to GitHub. I started with encryping the password using Mongoose-Encryption then upgraded to Hashing. I then upgraded to Salting & Hashing passwords using bcrypt. Passport.js was used next to strenghten the security. I finally convert the app ths use OAuth, giving the user the ability to login via their Google or Facebook accounts.",
+        deployed: "This web app has been deployed on Heroku.",
+        icons: <SecretsIcons />
     },
     {
       id: 2,
@@ -31,14 +30,11 @@ const projects = [
       // image: url(".public/assets/images/students1.jpg"),
       imageAlt: "Student Connect Image",
       // link: url("https://beth-a.github.io/connect/"),
+     app: "",
       description: "Web app created with a classmate to assist Students to connect with fellow classmates and utilizes a realtime chat feature.",
       role: "My role was setting up the Laravel framework, polishing frontend, and setting up the databases & the routes.",
-      icons: [
-          // image= url("./public/images/icons/icon-laravel.png"),
-          // image= url("./public/images/icons/icon-php.png"),
-          // image= url("./public/images/icons/icons8-vue-js-50.png"),
-          // image= url("./public/images/icons/icon-mySQL.png")
-      ]
+      deployed: "",
+       icons: <SecretsIcons />
   }
 ]
 
