@@ -20,6 +20,7 @@ function createCard(project) {
       description={project.description}
       role={project.role}
       deployed={project.deployed}
+      packages={project.packages}
       icons={project.icons}
     />
   );
@@ -31,8 +32,9 @@ function App(){
         <div>
           <Header />
           <Jumbotron />
-          {projects.map(createCard)}
-          {/* <Card /> */}
+          <div className="container">
+            {projects.map(createCard)}
+          </div>
           <Footer />
         </div>
       );  

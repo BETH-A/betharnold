@@ -1,41 +1,73 @@
 import React from "react";
 import WebIcon from '@material-ui/icons/Web';
 import secretImg from "./images2/topSecretStamp.jpg";
-import SecretsIcons from "../src/components/images";
-
-
+import SecretsIcons, { KeeperIcons } from "../src/components/images";
+import connectImg from "./images2/students1.jpg";
+import keeperImg from "./images2/postItNotes.jpeg";
+import movieImg from "./images2/movie.jpg";
 
 
 const projects = [
     {
         id: 1,
         avatarIcon: <WebIcon/>,
-        name: "Secrets App",
+        name: "Secrets",
         subtitle: "Web Application",
-        image: <secretImg />,
+        image: secretImg,
         imageAlt: "Top Secret Image",
         link: "https://github.com/BETH-A/Secrets",
         app: "https://secrets-beth.herokuapp.com/",
         description: "Secrets allows users to anonymously share secrets. This app was developed as a way to practice Authentication & Security practices.",
-
         role: "This app went through many revisions while enhancing security on each commit to GitHub. I started with encryping the password using Mongoose-Encryption then upgraded to Hashing. I then upgraded to Salting & Hashing passwords using bcrypt. Passport.js was used next to strenghten the security. I finally convert the app ths use OAuth, giving the user the ability to login via their Google or Facebook accounts.",
         deployed: "This web app has been deployed on Heroku.",
-        icons: <SecretsIcons />
+        packages: "EJS, MongoDB, Heroku, OAuth",
+        icons: SecretsIcons
     },
     {
       id: 2,
       avatarIcon: <WebIcon/>,
-      name: "Student Connect",
+      name: "Keeper",
       subtitle: "Web Application",
-      // image: url(".public/assets/images/students1.jpg"),
-      imageAlt: "Student Connect Image",
-      // link: url("https://beth-a.github.io/connect/"),
+      image: keeperImg,
+      imageAlt: "Keeper Image",
+      link: "https://github.com/BETH-A/Keeper",
      app: "",
-      description: "Web app created with a classmate to assist Students to connect with fellow classmates and utilizes a realtime chat feature.",
-      role: "My role was setting up the Laravel framework, polishing frontend, and setting up the databases & the routes.",
-      deployed: "",
-       icons: <SecretsIcons />
-  }
+      description: "Note/Post-it type web application created with React.",
+      role: "User has can create and delete notes. Currently only the Front End is available.  Linking to MongoDB Atlas and deploying to Heroku is in process.",
+      deployed: "Under construction",
+      packages: "EJS, MongoDB, Heroku, OAuth",
+      icons: KeeperIcons
+  },
+  {
+    id: 3,
+    avatarIcon: <WebIcon/>,
+    name: "Student Connect",
+    subtitle: "Web Application",
+    image: connectImg,
+    imageAlt: "Student Connect Image",
+    link: "https://beth-a.github.io/connect/",
+   app: "",
+    description: "Web app created with a classmate to assist Students to connect with fellow classmates and utilizes a realtime chat feature.",
+    role: "My role was setting up the Laravel framework, polishing frontend, and setting up the databases & the routes.",
+    deployed: "",
+    packages: "EJS, MongoDB, Heroku, OAuth",
+    icons: KeeperIcons
+},
+{
+  id: 4,
+  avatarIcon: <WebIcon/>,
+  name: "Movie Night",
+  subtitle: "Web Application",
+  image: movieImg,
+  imageAlt: "Movie Night Image",
+  link: "https://beth-a.github.io/Project-1/",
+  app: "",
+  description: "Web App created to show current movies showing & data about each movie while providing local theater locations based on zip code.",
+  role: "The app uses an API to pull movie info including movie poster.  Four person team, I was responsible for the Front End Development.",
+  deployed: "The app was deployed on Google Firebase Console.",
+  packages: "EJS, MongoDB, Heroku, OAuth",
+  icons: <SecretsIcons />
+}
 ]
 
 

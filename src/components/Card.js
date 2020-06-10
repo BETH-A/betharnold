@@ -5,22 +5,19 @@ import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMe
 import { red } from '@material-ui/core/colors';
 import { CardDeck } from 'reactstrap';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import CodeIcon from '@material-ui/icons/Code';
 import WebIcon from '@material-ui/icons/Web';
+import CodeIcon from '@material-ui/icons/Code';
 import secretImg from "../images2/topSecretStamp.jpg";
-import SecretsIcons from "./images";
+import SecretsIcons , { KeeperIcons }from "./images";
 import projects from "../projects";
-
-
+import CardHead from "./CardHead";
+import CardAvatar from "./CardAvatar";
+import secretsIcons from './images';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 375,
-    marginLeft: 25,
   },
   media: {
-    height: 0,
-    paddingTop: '56.25%', // 16:9
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -34,8 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   avatar: {
     backgroundColor: red[900],
-  },
-}));
+  }}));
 
 const theme = createMuiTheme({
     overrides: {
@@ -44,18 +40,12 @@ const theme = createMuiTheme({
           '&:hover': {
             backgroundColor: "#900",
             textDecoration: "none"
-          }
-        }
-      },
+          }}},
       MuiButton: {
         root: {
           '&:hover': {
             backgroundColor: "#900"
-          }
-        }
-      }
-    }
-  });
+          }}}}});
 
 export default function ProjectCard(props) {
   const classes = useStyles();
@@ -66,73 +56,71 @@ export default function ProjectCard(props) {
   };
 
   return (
-    <CardDeck>
-    <Card className={classes.root}>
-      <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            <WebIcon />
-          </Avatar>
-        }
-        title={props.name}
-        subheader={props.subtitle}
-      >
-      </CardHeader>
-      <CardMedia
-        className={classes.media}
-        image= {props.image}
-        title={props.imgAlt}
-      />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {props.description}        
-        </Typography>
-      </CardContent>
-      <MuiThemeProvider theme={theme}>
-        <CardActions disableSpacing>
-          <Tooltip title="View code">
-            <IconButton aria-label="View code on Github" href={props.link}>
-                <CodeIcon />
-            </IconButton>
-          </Tooltip>
-          
-          <Button aria-label="Live app" href={props.app}>
-              View App
-          </Button>
-          <IconButton
-            className={clsx(classes.expand, {
-              [classes.expandOpen]: expanded,
-            })}
-            onClick={handleExpandClick}
-            aria-expanded={expanded}
-            aria-label="show more"
-          >
-            <ExpandMoreIcon />
-          </IconButton>
-        </CardActions>
-      </MuiThemeProvider>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+    <Grid>
+      <Card className={classes.root}>
+        <CardHeader
+          avatar= {<CardAvatar />}
+          title={props.name}
+          subheader={props.subtitle}
+        />
+        
+        <CardMedia
+          className={classes.media}
+          image= {props.image}
+          title={props.imgAlt}
+        />
         <CardContent>
-          <Typography paragraph variant="body2" component="p">Role:</Typography>
-          <Typography paragraph variant="body2" component="p">
-            {props.role}
+          <Typography variant="body2" color="textSecondary" component="p">
+            {props.description}        
           </Typography>
-          <Typography paragraph variant="body2" component="p">
-            {props.deployed}
-          </Typography>
-          
-          <Box>
+        </CardContent>
+        <MuiThemeProvider theme={theme}>
+          <CardActions disableSpacing>
+            <Tooltip title="View code">
+              <IconButton aria-label="View code on Github" href={props.link}>
+                  <CodeIcon />
+              </IconButton>
+            </Tooltip>
+            
+            <Button aria-label="Live app" href={props.app}>
+                View App
+            </Button>
+            <IconButton
+              className={clsx(classes.expand, {
+                [classes.expandOpen]: expanded,
+              })}
+              onClick={handleExpandClick}
+              aria-expanded={expanded}
+              aria-label="show more"
+            >
+              <ExpandMoreIcon />
+            </IconButton>
+          </CardActions>
+        </MuiThemeProvider>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+            <Typography paragraph variant="body2" component="p">Role:</Typography>
+            <Typography paragraph variant="body2" component="p">
+              {props.role}
+            </Typography>
+            <Typography paragraph variant="body2" component="p">
+              {props.deployed}
+            </Typography>
             <Typography paragraph variant="body2" component="p">
               Packages used:
             </Typography>
-              <SecretsIcons />         
-            </Box>
+            <Typography paragraph variant="body2" component="p">
+              {props.packages}
+            </Typography>
+            <Typography paragraph variant="body2" component="img">
+              {/* {props.icons} */}
+            </Typography>
+            <KeeperIcons />
             
-         
-      
-        </CardContent>
-      </Collapse>
-    </Card>
-    </CardDeck>
+            
+          </CardContent>
+        </Collapse>
+      </Card>
+    </Grid>
   );
 }
