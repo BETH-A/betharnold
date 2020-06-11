@@ -78,8 +78,14 @@ body {
   }
 
   .MuiButtonBase.root.&:hover {
-        background-color: #900;
-        text-decoration: none;
+    background-color: #900;
+    text-decoration: none;
+  }
+
+  .MuiCardHeader-avatar {
+    /* background-color: #900; */
+    color: #eee;
+    variant: "circle";
   }
 
   .MuiPaper-rounded {

@@ -29,9 +29,9 @@ function CardAvatar (props){
 
     const classes = useStyles();
     return(
-        <Avatar aria-label="recipe" className={classes.avatar}>
-            {/* {props.avatarIcon} */}
-            <WebIcon />
+        <Avatar aria-label="recipe" className={classes.avatar} variant="circle"
+          avatar= {props.avatarIcon}>
+            {/* <WebIcon /> */}
         </Avatar>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import { Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Grid, IconButton, Tooltip, Typography } from '@material-ui/core';
+import { Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Grid, IconButton, Tooltip, Typography, CircularProgress } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import CodeIcon from '@material-ui/icons/Code';
@@ -53,8 +53,12 @@ export default function ProjectCard(props) {
   return (
     <Grid>
       <Card className={classes.root}>
-        <CardHeader
-          avatar= {<CardAvatar />}
+        <CardHeader 
+          
+          avatar= {
+            // props.avatarIcon
+          <CardAvatar />
+          }
           title={props.name}
           subheader={props.subtitle}
         />
