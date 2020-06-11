@@ -32,11 +32,12 @@ const useStyles = makeStyles((theme) => ({
     }}));
   
 
-function CardAvatar (){
+function CardAvatar (props){
 
     const classes = useStyles();
     return(
         <Avatar aria-label="recipe" className={classes.avatar}>
+            {/* {props.avatarIcon} */}
             <WebIcon />
         </Avatar>
     )

@@ -23,44 +23,6 @@ body {
   }
   
   /* class styling */
-  .blockquote {
-    background: #f7caca;
-    height: 115px;
-    text-align: center;
-  }
-  
-  .blockquote-footer {
-    background: #e9ecef;
-    height: 30px;
-  }
-  
-  .btn {
-    background-color: #900;
-  }
-  
-  .card-columns {
-    display: inline-block;
-    /* height: 550px; */
-  }
-  
-  .card-img-top {
-      height: 200px;
-  }
-  
-  .card-text {
-    padding: 10px;
-  }
-  
-  .contact {
-    margin-left: 150px;
-  }
-  
-  .conactCard {
-    background-color: #900;
-    text-align: center;
-    width: 250px;
-  }
-
   .container {
     align-items: center;
     display: inline;
@@ -99,7 +61,20 @@ body {
   
   .jumbotron {
     height: 120px;
-    padding-top: 20px;
+    padding-top: 0;
+  }
+
+  .makeStyles-root-1 {
+    width: 450px;
+    max-width: 400px;
+    margin: 50px;
+    float: left;
+    overflow: auto
+  }
+
+  .makeStyles-media-2 {
+    height: 0;
+    padding-top: 56.25%;
   }
 
   .MuiButtonBase.root.&:hover {
@@ -119,20 +94,6 @@ body {
     color: #7f7f7f;
   }
 
-  .makeStyles-root-1 {
-    margin-bottom: 50px;
-    width: 450px;
-    max-width: 400px;
-    margin: 50px;
-    float: left;
-    overflow: auto
-  }
-
-  .makeStyles-media-2 {
-    height: 0;
-    padding-top: 56.25%;
-  }
-  
   .navbar {
     background-color: #900;
     height: 125px;
@@ -155,14 +116,6 @@ body {
     flex-direction: row;
   }
   
-  .quote {
-    margin-bottom: 100px;
-  }
-  
-  .quotetext {
-    color: #000;
-  }
-  
   .profile_data {
     color: #fff;
     float: left;
@@ -171,29 +124,10 @@ body {
     position: absolute;
   }
   
-  .projectCard {
-    background-color: #900;
-    color: #fff;
-    height: 525px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .projectCardRow {
-    margin: 20;
-    align-items: center;
-  }
-  
   .row {
     padding: 30px;
   }
-  
-  .webApps {
-    color: #fff;
-    text-align: center;
-  }
-  
-  
+ 
   /* Link Styling */
   /* unvisited link */
   a:link {
