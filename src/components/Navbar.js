@@ -1,5 +1,5 @@
 import React from "react";
-import ReactBootstrap, { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function CustomNavbar(){

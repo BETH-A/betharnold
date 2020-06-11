@@ -1,17 +1,12 @@
 import React from 'react';
 import { makeStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Grid, IconButton, Tooltip, Typography } from '@material-ui/core';
+import { Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Grid, IconButton, Tooltip, Typography } from '@material-ui/core';
 import { red } from '@material-ui/core/colors';
-import { CardDeck } from 'reactstrap';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import WebIcon from '@material-ui/icons/Web';
 import CodeIcon from '@material-ui/icons/Code';
-import secretImg from "../images2/topSecretStamp.jpg";
-import SecretsIcons , { KeeperIcons }from "./images";
-import projects from "../projects";
-import CardHead from "./CardHead";
 import CardAvatar from "./CardAvatar";
+import SecretsIcons , { KeeperIcons }from "./images";
 import secretsIcons from './images';
 
 const useStyles = makeStyles((theme) => ({

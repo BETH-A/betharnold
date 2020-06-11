@@ -10,6 +10,7 @@ import memoryImg from "./images2/Tropical-Background-1.jpg";
 import giphyImg from "./images2/giphy.gif";
 import hpImg from "./images2/HPbackground2.jpg";
 import pewImg from "./images2/pew.png";
+import drDImg from "./images2/drD.png";
 
 
 const projects = [
@@ -132,21 +133,21 @@ const projects = [
   deployed: "The website was created on SquareSpaces.com.",
   packages: "None required",
   icons: ""
-// },
-// {
-//   id: 9,
-//   avatarIcon: <WebIcon/>,
-//   name: "Memory Game",
-//   subtitle: "Web Application",
-//   image: memoryImg,
-//   imageAlt: "Memory Game Image",
-//   link: "https://github.com/BETH-A/Memory-Game",
-//   app: "https://beth-a.github.io/clickgame/",
-//   description: "Test your memory with this Tropical web application. Don't click on the same image twice in order to win the game.",
-//   role: "App was created to demonstrate basic logic and state management.",
-//   deployed: "The app was deployed on Heroku.",
-//   packages: "React, Node.js, Heroku",
-//   icons: <SecretsIcons />
+},
+{
+  id: 9,
+  avatarIcon: <WebAssetIcon/>,
+  name: "Dr D Acupuncture",
+  subtitle: "Client Web Site",
+  image: drDImg,
+  imageAlt: "DrD Image",
+  link: "",
+  app: "https://www.drdacupuncture.com/",
+  description: "Dr Denise is a board certified & Licensed Acupuncture Physician in Winter Park, FL. ",
+  role: "Client web site designed to their specifications.  Client already has the domain and plateform, but I was tasked with designing the site.",
+  deployed: "The website was created on SquareSpaces.com.",
+  packages: "None required",
+  icons: ""
 // },
 // {
 //   id: 10,

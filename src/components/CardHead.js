@@ -1,9 +1,7 @@
 import React from 'react';
-import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Collapse, Grid, IconButton, Tooltip, Typography } from '@material-ui/core';
-import { makeStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import {  CardHeader } from '@material-ui/core';
+import { makeStyles,  createMuiTheme } from '@material-ui/core/styles';
 import { red } from '@material-ui/core/colors';
-import projects from "../projects";
-import CardAvatar from "./CardAvatar";
 
 
 import WebIcon from '@material-ui/icons/Web';
