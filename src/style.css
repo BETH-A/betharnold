@@ -85,7 +85,11 @@ body {
   .MuiCardHeader-avatar {
     /* background-color: #900; */
     color: #eee;
-    variant: "circle";
+  }
+
+  .MuiAvatar-circle {
+        background-color: #900;
+
   }
 
   .MuiPaper-rounded {

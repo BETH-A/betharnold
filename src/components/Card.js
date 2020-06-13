@@ -56,8 +56,8 @@ export default function ProjectCard(props) {
         <CardHeader 
           
           avatar= {
-            // props.avatarIcon
-          <CardAvatar />
+            props.avatarIcon
+          // <CardAvatar />
           }
           title={props.name}
           subheader={props.subtitle}
