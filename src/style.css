@@ -1,9 +1,24 @@
+/* reset */
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 /* content styling */
+html {
+  /* //This defines what 1rem is */
+  font-size: 100%;
+}
+
 body {
     background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
-    background-color: #383838;
+    background-color: #383838;    
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* background-size: cover; */
+    font-size: 1rem;
   }
   
   label {
@@ -17,24 +32,27 @@ body {
   /* div styling */
   #pic {
     float: left;
-    height: 450px;
-    margin-right: 15px;
-    width: 300px;
+    /* height: 45rem; */
+    margin-right: 1.5rem;
+    width: 10rem;
   }
   
   /* class styling */
   .container {
     align-items: center;
-    display: inline;
+    display: block;
+    margin: 0 3rem;
+    max-width: 100rem;
+    width: 169rem;
   }
 
   .footer {
     background: #900;
     bottom: 0;
     color: #fff;
-    height: 60px;
+    height: 4rem;
     left: 0;
-    padding:20px;
+    padding: 1rem;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -49,27 +67,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 1.5rem;
   }
   
   .img-fluid {
     float: left;
-    height: 275px;
-    margin-right: 15px;
-    width: 300px;
+    /* height: 2.75rem; */
+    margin-right: .5rem;
+    width: 15rem;
   }
   
   .jumbotron {
-    height: 120px;
+    height: 6rem;
     padding-top: 0;
   }
 
   .makeStyles-root-1 {
-    width: 450px;
-    max-width: 400px;
-    margin: 50px;
+    width: 30rem;
+    max-width: 25rem;
+    margin: 3rem;
     float: left;
-    overflow: auto
+    overflow: auto;
   }
 
   .makeStyles-media-2 {
@@ -93,7 +111,7 @@ body {
   }
 
   .MuiPaper-rounded {
-    border-radius: 25px;
+    border-radius: 2.5rem;
   }
 
   .MuiSvgIcon-root {
@@ -106,11 +124,11 @@ body {
 
   .navbar {
     background-color: #900;
-    height: 125px;
+    height: 6.5rem;
   }
   
   .navbar-brand {
-    font-size: 40px;
+    font-size: 3rem;
   }
 
   .navbar-light .navbar-brand {
@@ -118,7 +136,7 @@ body {
   }
 
   .nav-link {
-    font-size: 25px;
+    font-size: 2rem;
   }
 
   .navLinks {
@@ -129,13 +147,13 @@ body {
   .profile_data {
     color: #fff;
     float: left;
-    left: 350px;
-    padding: 55px 30px 0px 30px;
+    left: 35rem;
+    padding: 5.5rem 3rem 0px 3rem;
     position: absolute;
   }
   
   .row {
-    padding: 30px;
+    padding: 1.5rem;
   }
  
   /* Link Styling */
