@@ -40,10 +40,9 @@ body {
   /* class styling */
   .container {
     align-items: center;
-    display: inline-block;
-    margin: 0 3.5rem;
-    max-width: 100rem;
-    width: 169rem;
+    /* display: inline-block; */
+    margin: 0 auto;
+    max-width: 114rem;
   }
 
   .footer {
