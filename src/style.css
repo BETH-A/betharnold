@@ -108,7 +108,7 @@ body {
 
   .MuiButtonBase.root.&:hover {
     background-color: var(--color-red);
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
   .MuiCardHeader-avatar {
