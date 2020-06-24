@@ -1,10 +1,10 @@
 .navbar {
     background-color: $color-red;
-    height: $height-md;
   }
   
   .navbar-brand {
     font-size: $font-size-md;
+    // text-transform: uppercase;
   }
 
   .navbar-light .navbar-brand {

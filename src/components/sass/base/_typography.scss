@@ -12,5 +12,9 @@ label {
   }
   
 p {
-color: $color-white;
+  color: $color-white;
+}
+
+.display-3 {
+  font-size: $font-size-lg;
 }

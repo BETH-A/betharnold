@@ -18,12 +18,12 @@
 
   .makeStyles-root-1 {
     width: $width-lg;
-    max-width: $width-md;
+    max-width: $width-lg;
     margin: $padding-sm;
     float: left;
     overflow: auto;
     height: $height-xxl;
-    color: $color-greg-medium-1;
+    color: $color-grey-medium-1;
   }
 
   .makeStyles-media-2 {
@@ -38,15 +38,19 @@
 
   .MuiCardHeader-avatar {
       /* background-color: $color-red; */
-      color: $color-gray-light;
+      color: $color-grey-light;
   }
 
   .MuiAvatar-circle {
       background-color: $color-red;
   }
 
+  .MuiPaper-elevation1 {
+    box-shadow: 0px 2px 1px -1px rgba(0,25,0,0.2), 0px 1px 1px 0px rgba(0,8,0,0.14), 25px 10px 30px 1px rgba(251,0,0,0.12);
+  }
+
   .MuiPaper-rounded {
-    border-radius: 20rem;
+    border-radius: 3rem;
   }
 
   .MuiSvgIcon-root {
@@ -54,5 +58,5 @@
   }
 
   .MuiTypography-body2 {
-    color: $color-greg-medium-2;
+    color: $color-grey-medium-2;
   }

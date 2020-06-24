@@ -6,8 +6,6 @@
     left: 0;
     padding: $padding-xxs;
     position: fixed;
-    // text-align: center;
+    text-align: center;
     width: 100%;
-
-    @include absoluteCenter;
   }
