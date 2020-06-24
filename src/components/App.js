@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Jumbotron from "./Jumbotron";
 import Card from "./Card";
 import projects from "../projects";
-import "../components/sass/style.scss";
+import "../components/sass/main.scss";
 
 function createCard(project) {
   return (

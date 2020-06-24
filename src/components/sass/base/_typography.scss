@@ -1,9 +1,16 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-size: $default-font-size;
-    line-height: 1.7;
+    font-weight: $font-weight-default;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
     color: $color-white;
-    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
-    box-sizing: border-box;
+    
+}
+
+label {
+    color: $color-white;
+  }
+  
+p {
+color: $color-white;
 }

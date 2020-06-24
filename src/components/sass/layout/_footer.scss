@@ -1,3 +1,13 @@
 .footer {
-    
-}
+    background: $color-red;
+    bottom: 0;
+    color: $color-white;
+    height: $height-sm;
+    left: 0;
+    padding: $padding-xxs;
+    position: fixed;
+    // text-align: center;
+    width: 100%;
+
+    @include absoluteCenter;
+  }

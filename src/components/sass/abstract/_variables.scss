@@ -12,10 +12,40 @@ $color-grey-dark: #383838;
 
 
 //FONT-SIZES
-$default-font-size: 1.6rem;
+$font-size-default: 1.6rem;
+$font-size-sm: 2rem;
+$font-size-md: 3rem;
+
+//FONT-WEIGHT
+$font-weight-default: 400;
 
 //GRID
 $grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
+$gutter-vertical-sm: 6rem;
+$gutter-vertical-md: 8rem;
+$gutter-vertical-lg: 10rem;
 $gutter-horizontal: 6rem;
+
+//HEIGHT
+$height-0: 0;
+$height-sm: 4rem;
+$height-md: 6.5rem;
+$height-lg: 10rem;
+$height-xl: 15rem;
+$height-xxl: 30rem;
+
+//LINE-HEIGHT
+$line-height-default: 1.7;
+
+//PADDING
+$padding-0: 0;
+$padding-xxs: 1rem;
+$padding-xs: 1.5rem;
+$padding-sm: 3rem;
+$padding-md: 5rem;
+$padding-lg: 6rem;
+
+//WIDTH
+$width-sm: 15rem;
+$width-md: 25rem;
+$width-lg: 35rem;

@@ -1,3 +1,58 @@
-.card {
-    
-}
+.iconRow {
+    @include absoluteCenter;
+
+  }
+
+  .icons {
+    display: flex;
+    @include absoluteCenter;
+    padding-bottom: $padding-xs;
+  }
+
+  .img-fluid {
+    float: left;
+    /* height: 2.75rem; */
+    margin-right: .5rem;
+    width: $width-sm;
+  }
+
+  .makeStyles-root-1 {
+    width: $width-lg;
+    max-width: $width-md;
+    margin: $padding-sm;
+    float: left;
+    overflow: auto;
+    height: $height-xxl;
+    color: $color-greg-medium-1;
+  }
+
+  .makeStyles-media-2 {
+    height: $height-0;
+    padding-top: 56.25%;
+  }
+
+  .MuiButtonBase.root :hover {
+    background-color: $color-red;
+    /* text-decoration: none; */
+  }
+
+  .MuiCardHeader-avatar {
+      /* background-color: $color-red; */
+      color: $color-gray-light;
+  }
+
+  .MuiAvatar-circle {
+      background-color: $color-red;
+  }
+
+  .MuiPaper-rounded {
+    border-radius: 20rem;
+  }
+
+  .MuiSvgIcon-root {
+    border: none;
+  }
+
+  .MuiTypography-body2 {
+    color: $color-greg-medium-2;
+  }

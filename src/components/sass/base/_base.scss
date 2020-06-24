@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: inherit;
 }
+
 html {
     //This defines what 1rem is
     font-size: 62.5%; // 1rem = 10px;  10px/16px = 62.5%
@@ -22,11 +23,38 @@ html {
     //     font-size: 30%; //1rem = 4.8px, 4.8/16= 30%
     // } 
 }
+
 body {
     box-sizing: border-box;
-    padding: 3rem;   
+    padding: $padding-sm; 
+    background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");  
     
     @include respond(tab-port) { //width < 900?
         padding: 0;
     }
+}
+
+.row {
+    padding: $padding-xs;
+  }
+
+   /* Link Styling */
+  /* unvisited link */
+  a:link {
+    color: $color-greg-medium-1;
+}
+
+/* visited link */
+a:visited {
+    color: $color-red;
+}
+
+/* mouse over link */
+a:hover {
+    color: $color-gray-light;
+}
+
+/* selected link */
+a:active {
+    color: $color-greg-medium-1;
 }
