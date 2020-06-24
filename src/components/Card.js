@@ -51,7 +51,12 @@ export default function ProjectCard(props) {
   };
 
   return (
-    <Grid>
+    <Grid className="grid"
+      items
+      direction="row"
+      justify="space-evenly"
+      alignItems="flex-start"
+    >
       <Card className={classes.root}>
         <CardHeader 
           
