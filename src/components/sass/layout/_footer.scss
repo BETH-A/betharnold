@@ -1,10 +1,10 @@
 .footer {
-    background: $color-red;
+    background: var(--color-red);
     bottom: 0;
-    color: $color-white;
-    height: $height-sm;
+    color: var(--color-white);
+    height: var(--height-sm);
     left: 0;
-    padding: $padding-xxs;
+    padding: var(--padding-xxs);
     position: fixed;
     text-align: center;
     width: 100%;

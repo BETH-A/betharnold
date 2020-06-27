@@ -6,43 +6,43 @@
   .icons {
     display: flex;
     @include absoluteCenter;
-    padding-bottom: $padding-xs;
+    padding-bottom: var(--padding-xs);
   }
 
   .img-fluid {
     float: left;
     /* height: 2.75rem; */
     margin-right: .5rem;
-    width: $width-sm;
+    width: var(--width-sm);
   }
 
   .makeStyles-root-1{
     width: 20%;
-    // max-width: $width-lg;
-    margin: $padding-sm;
+    // max-width: var(--width-lg);
+    margin: var(--padding-sm);
     float: left;
     overflow: auto;
-    height: $height-xxl;
-    color: $color-grey-medium-1;
+    height: var(--height-xxl);
+    color: var(--color-grey-medium-1);
   }
 
   .makeStyles-media-2 {
-    height: $height-0;
+    height: var(--height-0);
     padding-top: 56.25%;
   }
 
   .MuiButtonBase.root :hover {
-    background-color: $color-red;
+    background-color: var(--color-red);
     /* text-decoration: none; */
   }
 
   .MuiCardHeader-avatar {
-      /* background-color: $color-red; */
-      color: $color-grey-light;
+      /* background-color: var(--color-red); */
+      color: var(--color-grey-light);
   }
 
   .MuiAvatar-circle {
-      background-color: $color-red;
+      background-color: var(--color-red);
   }
 
   .MuiPaper-elevation1 {
@@ -58,5 +58,5 @@
   }
 
   .MuiTypography-body2 {
-    color: $color-grey-medium-2;
+    color: var(--color-grey-medium-2);
   }

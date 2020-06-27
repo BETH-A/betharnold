@@ -1,18 +1,18 @@
 .navbar {
-    background-color: $color-red;
+    background-color: var(--color-red);
   }
   
   .navbar-brand {
-    font-size: $font-size-md;
+    font-size: var(--font-size-md);
     // text-transform: uppercase;
   }
 
   .navbar-light .navbar-brand {
-    color: $color-white;
+    color: var(--color-white);
   }
 
   .nav-link {
-    font-size: $font-size-sm;
+    font-size: var(--font-size-sm);
   }
 
   .navLinks {

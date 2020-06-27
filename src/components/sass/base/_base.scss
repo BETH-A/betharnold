@@ -26,15 +26,15 @@ html {
 
 body {
     box-sizing: border-box;
-    background-image: linear-gradient(to right bottom, $color-black, $color-grey-medium-2, $color-black); 
+    background-image: linear-gradient(to right bottom, var(--color-black), var(--color-grey-medium-2), var(--color-black)); 
     
     @include respond(tab-port) { //width < 900?
-        padding: 0;
+        padding: var(--padding-0);
     }
 }
 
 .row {
-    padding: $padding-xs;
+    padding: var(--padding-xs);
     display: flex;
 
   }
@@ -46,20 +46,20 @@ body {
    /* Link Styling */
   /* unvisited link */
   a:link {
-    color: $color-grey-medium-1;
+    color: var(--color-grey-medium-1);
 }
 
 /* visited link */
 a:visited {
-    color: $color-red;
+    color: var(--color-red);
 }
 
 /* mouse over link */
 a:hover {
-    color: $color-grey-light;
+    color: var(--color-grey-light);
 }
 
 /* selected link */
 a:active {
-    color: $color-grey-medium-1;
+    color: var(--color-grey-medium-1);
 }

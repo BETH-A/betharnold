@@ -1,52 +1,64 @@
 //COLORS
-$color-red: #900;
+:root {
 
-$color-white: #fff;
+//COLORS
+    --color-red: #900;
 
-$color-grey-light: #eee;
-$color-grey-medium-2: #7f7f7f;
-$color-grey-medium-1: #666;
-$color-grey-dark: #383838;
+    --color-white: #fff;
 
-$color-black: rgb(0, 0, 0);
+    --color-grey-light: #eee;
+    --color-grey-medium-2: #7f7f7f;
+    --color-grey-medium-1: #666;
+    --color-grey-dark: #383838;
+
+    --color-black: rgb(0, 0, 0);
 
 
 //FONT-SIZES
-$font-size-default: 1.6rem;
-$font-size-sm: 2rem;
-$font-size-md: 5rem;
-$font-size-lg: 8rem;
+    --font-size-default: 1.6rem;
+    --font-size-sm: 2rem;
+    --font-size-md: 5rem;
+    --font-size-lg: 8rem;
 
 //FONT-WEIGHT
-$font-weight-default: 400;
+    --font-weight-default: 400;
 
 //GRID
-$grid-width: 114rem;
-$gutter-vertical-sm: 6rem;
-$gutter-vertical-md: 8rem;
-$gutter-vertical-lg: 10rem;
-$gutter-horizontal: 6rem;
+    --grid-width: 114rem;
+    --gutter-vertical-sm: 6rem;
+    --gutter-vertical-md: 8rem;
+    --gutter-vertical-lg: 10rem;
+    --gutter-horizontal: 6rem;
 
 //HEIGHT
-$height-0: 0;
-$height-sm: 4rem;
-$height-md: 6.5rem;
-$height-lg: 10rem;
-$height-xl: 15rem;
-$height-xxl: 35rem;
+    --height-0: 0;
+    --height-sm: 4rem;
+    --height-md: 6.5rem;
+    --height-lg: 10rem;
+    --height-xl: 15rem;
+    --height-xxl: 35rem;
+
+//LINES
+    --line: .1rem solid var(--color-grey-light-2);
 
 //LINE-HEIGHT
-$line-height-default: 1.7;
+    --line-height-default: 1.7;
 
 //PADDING
-$padding-0: 0;
-$padding-xxs: 1rem;
-$padding-xs: 1.5rem;
-$padding-sm: 3rem;
-$padding-md: 5rem;
-$padding-lg: 6rem;
+    --padding-0: 0;
+    --padding-xxs: 1rem;
+    --padding-xs: 1.5rem;
+    --padding-sm: 3rem;
+    --padding-md: 5rem;
+    --padding-lg: 6rem;
+
+//SHADOWS
+    --shadow-ligh: 0 2rem 5rem rgba(5, 3, 3, 0.06);
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
 
 //WIDTH
-$width-sm: 15rem;
-$width-md: 25rem;
-$width-lg: 30rem;
+    --width-sm: 15rem;
+    --width-md: 25rem;
+    --width-lg: 30rem;
+
+}
