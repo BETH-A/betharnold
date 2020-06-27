@@ -1,6 +1,8 @@
 import React from "react";
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { ReactComponent as ReactIcon} from '../images2/SVG/react.svg';
+import { ReactComponent as GithubIcon} from '../images2/SVG/github.svg';
 
 function CustomNavbar(){
     return (
@@ -28,7 +30,8 @@ function CustomNavbar(){
                     <img src="/images/icons/linkedIn_blackCircle.png" alt="LinkedIn Link" />
                 </Nav.Link>
                 <Nav.Link className="justify-content-end" inline key={2} href="https://github.com/BETH-A">
-                    <img src="/images/icons/github_cat.png" alt="Github Link" />
+                    <img src={GithubIcon} alt="Github Link"/>
+                    {/* <img src="/images/icons/github_cat.png" alt="Github Link" /> */}
                 </Nav.Link>
             </div>
     </Navbar>
