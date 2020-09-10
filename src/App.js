@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Jumbotron from "./Jumbotron";
-import Card from "./Card";
-import projects from "../projects";
-import "../components/sass/main.scss";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Jumbotron from "./components/Jumbotron";
+import Card from "./components/Card";
+import projects from "./contexts/projects";
+import "../src/style/sass/main.scss";
 
 function createCard(project) {
   return (

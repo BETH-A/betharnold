@@ -1,8 +1,8 @@
 import React from "react";
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { ReactComponent as ReactIcon} from '../images2/SVG/react.svg';
-import { GithubIcon } from '../images2/SVG/github.svg';
+import { ReactComponent as ReactIcon} from '../assets/SVG/react.svg';
+import { GithubIcon } from '../assets/SVG/github.svg';
 
 function CustomNavbar(){
     return (

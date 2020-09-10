@@ -1,16 +1,17 @@
 import React from "react";
 import WebIcon from '@material-ui/icons/Web';
 import WebAssetIcon from '@material-ui/icons/WebAsset';
-import secretImg from "./images2/topSecretStamp.jpg";
-import SecretsIcons, { KeeperIcons } from "../src/components/images";
-import connectImg from "./images2/students1.jpg";
-import keeperImg from "./images2/postItNotes.jpeg";
-import movieImg from "./images2/movie.jpg";
-import memoryImg from "./images2/Tropical-Background-1.jpg";
-import giphyImg from "./images2/giphy.gif";
-import hpImg from "./images2/HPbackground2.jpg";
-import pewImg from "./images2/pew.png";
-import drDImg from "./images2/drD.png";
+import secretImg from "../assets/images2/topSecretStamp.jpg";
+import SecretsIcons, { KeeperIcons } from "../components/images";
+import connectImg from "../assets/images2/students1.jpg";
+import keeperImg from "../assets/images2/postItNotes.jpeg";
+import movieImg from "../assets/images2/movie.jpg";
+import memoryImg from "../assets/images2/Tropical-Background-1.jpg";
+import giphyImg from "../assets/images2/giphy.gif";
+import hpImg from "../assets/images2/HPbackground2.jpg";
+import pewImg from "../assets/images2/pew.png";
+import drDImg from "../assets/images2/drD.png";
+
 
 
 const projects = [
