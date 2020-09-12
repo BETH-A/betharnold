@@ -9,9 +9,9 @@ import reactIcon from "../assets/icons/icons8-react-native-50.png";
 function SecretsIcons () {
     return(
         <div className="icons">
-            <img className="iconsImg" src={mongoDBIcon} />
-            <img className="iconsImg" src={herokuIcon} />
-            <img className="iconsImg" src={expressIcon} />  
+            <img className="iconsImg" src={mongoDBIcon} alt="MongoDB Icon"/>
+            <img className="iconsImg" src={herokuIcon} alt="Heroku Icon"/>
+            <img className="iconsImg" src={expressIcon} alt="Express Icon"/>  
         </div> 
     ) 
 }
@@ -19,9 +19,9 @@ function SecretsIcons () {
 function KeeperIcons (){
     return(
         <div className="icons">
-            <img className="iconsImg" src={reactIcon} />
-            <img className="iconsImg" src={herokuIcon} />
-            <img className="iconsImg" src={mongoDBIcon} />  
+            <img className="iconsImg" src={reactIcon} alt="React Icon"/>
+            <img className="iconsImg" src={herokuIcon} alt="Heroku Icon"/>
+            <img className="iconsImg" src={mongoDBIcon} alt="MongoDB Icon" />  
         </div> 
     )
 }

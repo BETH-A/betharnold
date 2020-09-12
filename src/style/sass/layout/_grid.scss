@@ -1,0 +1,10 @@
+.container {
+
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(7, 5vw);
+    row-gap: 6rem;
+    column-gap: 6rem;
+    padding: 1.5rem;
+}

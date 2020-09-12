@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 function Jumbotron(){
 
-    const [jumbo, setJumbo] = useState("Profile");
+    // const [jumbo, setJumbo] = useState("Profile");
 
     return(
         <div class="jumbotron">

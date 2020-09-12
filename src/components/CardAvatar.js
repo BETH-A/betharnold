@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
       transform: 'rotate(180deg)',
     },
     avatar: {
-      backgroundColor: red[900],
+      backgroundColor: "#383838",
     }}));
   
 
@@ -29,10 +29,11 @@ function CardAvatar (props){
 
     const classes = useStyles();
     return(
-        <Avatar aria-label="recipe" className={classes.avatar} variant="circle"
-          avatar= {props.avatarIcon}>
-            {/* <WebIcon /> */}
-        </Avatar>
+      
+        <Avatar className={classes.avatar} variant="circle">
+           {props.avatarIcon}
+             {/* <WebIcon />  */}
+         </Avatar>
     )
 }
 

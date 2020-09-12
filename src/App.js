@@ -26,13 +26,12 @@ function createCard(project) {
   );
 }
 
-function App(){
-
+function App(props){
     return (
         <div>
           <Header />
           <Jumbotron />
-          <div className="container">
+          <div className="container" >
             {projects.map(createCard)}
           </div>
           <Footer />

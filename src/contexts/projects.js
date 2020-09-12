@@ -1,6 +1,7 @@
 import React from "react";
 import WebIcon from '@material-ui/icons/Web';
 import WebAssetIcon from '@material-ui/icons/WebAsset';
+import MobileIcon from '@material-ui/icons/PhoneIphone';
 import secretImg from "../assets/images2/topSecretStamp.jpg";
 import SecretsIcons, { KeeperIcons } from "../components/images";
 import connectImg from "../assets/images2/students1.jpg";
@@ -11,17 +12,20 @@ import giphyImg from "../assets/images2/giphy.gif";
 import hpImg from "../assets/images2/HPbackground2.jpg";
 import pewImg from "../assets/images2/pew.png";
 import drDImg from "../assets/images2/drD.png";
-
+import nyReactImg from "../assets/images2/nyt.jpg";
+import bCard from "../assets/images2/bCard.png";
+import magicPaper from "../assets/images2/magicPaper.jpg";
 
 
 const projects = [
     {
         id: 1,
-        avatarIcon: <WebIcon/>,
+        avatarIcon: <WebIcon style={{fontSize: 30}}/>,
         name: "Secrets",
         subtitle: "Web Application",
         image: secretImg,
         imageAlt: "Top Secret Image",
+        component: "img",
         link: "https://github.com/BETH-A/Secrets",
         app: "https://secrets-beth.herokuapp.com/",
         description: "Secrets allows users to anonymously share secrets. This app was developed as a way to practice Authentication & Security practices.",
@@ -32,22 +36,53 @@ const projects = [
     },
     {
       id: 2,
-      avatarIcon: <WebIcon/>,
+      avatarIcon: <MobileIcon style={{fontSize: 30}}/>,
+      name: "BethCard",
+      subtitle: "iOS Application",
+      image: bCard,
+      imageAlt: "BethCard Video",
+      component: "video",
+      link: "https://github.com/BETH-A/BethCard",
+      app: "",
+      description: "Personal business card iOS App. Created as a way of learning and exploring SwiftUI.",
+      role: "The concept for this app was from a course I was taking to show us how to setup a basic iOS app using SwiftUI.  I expanded this project to discover more about SwiftUI. I added a second page, make the buttons active to external links, taped into CallKit and MessageUI so I could be contacted.",
+      deployed: "Not launched on the Apple App Store - code can be forked from repo & ran in XCode",
+      packages: "SwiftUI",
+      icons: KeeperIcons
+  },
+  {
+    id: 3,
+    avatarIcon: <MobileIcon style={{fontSize: 30}}/>,
+    name: "MagicPaper",
+    subtitle: "iOS Application",
+    image: magicPaper,
+    imageAlt: "MagicPaper Video",
+    link: "https://github.com/BETH-A/MagicPaper",
+   app: "",
+    description: "Harry Potter inspired Magic News Paper app. Created as a way to learn the basics of AR Kit.",
+    role: "This app was created as part of a course I was taking as an introduction to AR Kit.",
+    deployed: "Not launched on the Apple App Store - code can be forked from repo & ran in XCode",
+    packages: "SwiftUI",
+    icons: KeeperIcons
+},
+    {
+      id: 4,
+      avatarIcon: <WebIcon style={{fontSize: 30}}/>,
       name: "Keeper",
       subtitle: "Web Application",
       image: keeperImg,
       imageAlt: "Keeper Image",
       link: "https://github.com/BETH-A/Keeper",
      app: "",
-      description: "Note/Post-it type web application created with React.",
-      role: "User has can create and delete notes. Currently only the Front End is available.  Linking to MongoDB Atlas and deploying to Heroku is in process.",
+      description: "Note/Post-it type web application created with React. User has can create and delete notes. Currently only the Front End is available.",
+      role: "Created this application as part a way to practice React. Still need to link to MongoDB Atlas and deploying.",
       deployed: "Under construction",
       packages: "React, MongoDB, Heroku",
       icons: KeeperIcons
   },
   {
-    id: 3,
-    avatarIcon: <WebIcon/>,
+    id: 5,
+    avatarIcon: <WebIcon style={{fontSize: 30}}/>,
     name: "Student Connect",
     subtitle: "Web Application",
     image: connectImg,
@@ -61,8 +96,8 @@ const projects = [
     icons: KeeperIcons
 },
 {
-  id: 4,
-  avatarIcon: <WebIcon/>,
+  id: 6,
+  avatarIcon: <WebIcon style={{fontSize: 30}}/>,
   name: "Movie Night",
   subtitle: "Web Application",
   image: movieImg,
@@ -76,8 +111,8 @@ const projects = [
   icons: <SecretsIcons />
 },
 {
-  id: 5,
-  avatarIcon: <WebIcon/>,
+  id: 7,
+  avatarIcon: <WebIcon style={{fontSize: 30}}/>,
   name: "Memory Game",
   subtitle: "Web Application",
   image: memoryImg,
@@ -91,8 +126,8 @@ const projects = [
   icons: <SecretsIcons />
 },
 {
-  id: 6,
-  avatarIcon: <WebIcon/>,
+  id: 8,
+  avatarIcon: <WebIcon style={{fontSize: 30}}/>,
   name: "GifTastic",
   subtitle: "Web Application",
   image: giphyImg,
@@ -106,8 +141,8 @@ const projects = [
   icons: <SecretsIcons />
 },
 {
-  id: 7,
-  avatarIcon: <WebIcon/>,
+  id: 9,
+  avatarIcon: <WebIcon style={{fontSize: 30}}/>,
   name: "Harry Potter Trivia",
   subtitle: "Web Application",
   image: hpImg,
@@ -121,8 +156,8 @@ const projects = [
   icons: <SecretsIcons />
 },
 {
-  id: 8,
-  avatarIcon: <WebAssetIcon/>,
+  id: 10,
+  avatarIcon: <WebAssetIcon style={{fontSize: 30}}/>,
   name: "Pure Energy Wellness",
   subtitle: "Client Web Site",
   image: pewImg,
@@ -136,8 +171,8 @@ const projects = [
   icons: ""
 },
 {
-  id: 9,
-  avatarIcon: <WebAssetIcon/>,
+  id: 11,
+  avatarIcon: <WebAssetIcon style={{fontSize: 30}}/>,
   name: "Dr D Acupuncture",
   subtitle: "Client Web Site",
   image: drDImg,
@@ -149,46 +184,23 @@ const projects = [
   deployed: "The website was created on SquareSpaces.com.",
   packages: "None required",
   icons: ""
-// },
-// {
-//   id: 10,
-//   avatarIcon: <WebIcon/>,
-//   name: "Memory Game",
-//   subtitle: "Web Application",
-//   image: memoryImg,
-//   imageAlt: "Memory Game Image",
-//   link: "https://github.com/BETH-A/Memory-Game",
-//   app: "https://beth-a.github.io/clickgame/",
-//   description: "Test your memory with this Tropical web application. Don't click on the same image twice in order to win the game.",
-//   role: "App was created to demonstrate basic logic and state management.",
-//   deployed: "The app was deployed on Heroku.",
-//   packages: "React, Node.js, Heroku",
-//   icons: <SecretsIcons />
+},
+{
+  id: 12,
+  avatarIcon: <WebIcon style={{fontSize: 30}}/>,
+  name: "NY Times React Scrapper",
+  subtitle: "Web Application",
+  image: nyReactImg,
+  imageAlt: "NYReact Image",
+  link: "https://github.com/BETH-A/Memory-Game",
+  app: "https://nytreact-ba.herokuapp.com/",
+  description: "Retrieve New York Times news stories via API.",
+  role: "App was created to practice REST APIs.",
+  deployed: "The app was deployed on Heroku.",
+  packages: "React, Express.js, MongoDB",
+  icons: <SecretsIcons />
 }
 ]
 
-
-
-                          
-                          
-                            
-{/*                           
-<div class="card projectCard">
-  <a class="img-link" href="https://nytreact-ba.herokuapp.com/" target="_blank">
-    <img class="card-img-top" alt="NY Times React Scrapper" src="assets/images/nyt.jpg">
-    <div class="card-body">
-      <h5 class="card-title">NY Times React</h5>
-  </a>
-  <p class="card-text">Retrieve New York Times news stories via API.
-    This React Web App is deployed on Heroku and uses Express.js & MongoDB.</p>
-    </div>
-  <div class="card-footer iconRow">
-    <img src="assets/images/icons/icon-expressjs.png" alt="Express.js">
-    <img src="assets/images/icons/icons8-mongodb-50.png" alt="MongoDB">
-    <img src="assets/images/icons/icons8-react-native-50.png" alt="React">
-    <img src="assets/images/icons/icons8-heroku-50.png" alt="Heroku">
-                         
-
-                        */}
 
 export default projects;
