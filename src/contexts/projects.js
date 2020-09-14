@@ -13,9 +13,10 @@ import hpImg from "../assets/images2/HPbackground2.jpg";
 import pewImg from "../assets/images2/pew.png";
 import drDImg from "../assets/images2/drD.png";
 import nyReactImg from "../assets/images2/nyt.jpg";
-import bCard from "../assets/images2/bCard.png";
-import magicPaper from "../assets/images2/magicPaper.jpg";
-
+import bCardImg from "../assets/images2/bCard.png";
+import magicPaperImg from "../assets/images2/magicPaper.jpg";
+import natoursImg from "../assets/images2/natours.png";
+import nexterImg from "../assets/images2/nexter.jpeg";
 
 const projects = [
     {
@@ -28,18 +29,18 @@ const projects = [
         component: "img",
         link: "https://github.com/BETH-A/Secrets",
         app: "https://secrets-beth.herokuapp.com/",
-        description: "Secrets allows users to anonymously share secrets. This app was developed as a way to practice Authentication & Security practices.",
+        description: "Secrets allows users to anonymously share secrets. Developed as a way to practice Authentication & Security practices.",
         role: "This app went through many revisions while enhancing security on each commit to GitHub. I started with encryping the password using Mongoose-Encryption then upgraded to Hashing. I then upgraded to Salting & Hashing passwords using bcrypt. Passport.js was used next to strenghten the security. I finally convert the app ths use OAuth, giving the user the ability to login via their Google or Facebook accounts.",
         deployed: "This web app has been deployed on Heroku.",
         packages: "EJS, MongoDB, Heroku, OAuth",
-        icons: SecretsIcons
+        // icons: SecretsIcons
     },
     {
       id: 2,
       avatarIcon: <MobileIcon style={{fontSize: 30}}/>,
       name: "BethCard",
       subtitle: "iOS Application",
-      image: bCard,
+      image: bCardImg,
       imageAlt: "BethCard Video",
       component: "video",
       link: "https://github.com/BETH-A/BethCard",
@@ -48,14 +49,14 @@ const projects = [
       role: "The concept for this app was from a course I was taking to show us how to setup a basic iOS app using SwiftUI.  I expanded this project to discover more about SwiftUI. I added a second page, make the buttons active to external links, taped into CallKit and MessageUI so I could be contacted.",
       deployed: "Not launched on the Apple App Store - code can be forked from repo & ran in XCode",
       packages: "SwiftUI",
-      icons: KeeperIcons
+      // icons: KeeperIcons
   },
   {
     id: 3,
     avatarIcon: <MobileIcon style={{fontSize: 30}}/>,
     name: "MagicPaper",
     subtitle: "iOS Application",
-    image: magicPaper,
+    image: magicPaperImg,
     imageAlt: "MagicPaper Video",
     link: "https://github.com/BETH-A/MagicPaper",
    app: "",
@@ -63,7 +64,7 @@ const projects = [
     role: "This app was created as part of a course I was taking as an introduction to AR Kit.",
     deployed: "Not launched on the Apple App Store - code can be forked from repo & ran in XCode",
     packages: "SwiftUI",
-    icons: KeeperIcons
+    // icons: KeeperIcons
 },
     {
       id: 4,
@@ -74,11 +75,11 @@ const projects = [
       imageAlt: "Keeper Image",
       link: "https://github.com/BETH-A/Keeper",
      app: "",
-      description: "Note/Post-it type web application created with React. User has can create and delete notes. Currently only the Front End is available.",
+      description: "Note/Post-it type web application created with React. User has can create and delete notes. Currently only the Front End.",
       role: "Created this application as part a way to practice React. Still need to link to MongoDB Atlas and deploying.",
       deployed: "Under construction",
       packages: "React, MongoDB, Heroku",
-      icons: KeeperIcons
+      // icons: KeeperIcons
   },
 //   {
 //     id: 5,
@@ -104,11 +105,11 @@ const projects = [
   imageAlt: "Movie Night Image",
   link: "https://beth-a.github.io/Project-1/",
   app: "",
-  description: "Web App created to show current movies showing & data about each movie while providing local theater locations based on zip code.",
+  description: "Web App which shows current movies showing & data about each movie while providing local theater locations based on zip code.",
   role: "The app uses an API to pull movie info including movie poster.  Four person team, I was responsible for the Front End Development.",
   deployed: "The app was deployed on Google Firebase Console.",
   packages: "HTML5, CSS3, JavaScript, Firebase",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 },
 // {
 //   id: 7,
@@ -134,11 +135,11 @@ const projects = [
   imageAlt: "GifTastic Image",
   link: "https://beth-a.github.io/GifTastic/",
   app: "http://78.media.tumblr.com/e3e059dec30337f593abc3b554162eb9/tumblr_nb4z62cjaL1ry46hlo1_500.gif",
-  description: "Render gifs from giphy.com for any topic you list.",
+  description: "One of the 1st projects I created that used an API to render gifs from giphy.com for any topic you list.",
   role: "The app was created as a fun project to practice APIs. I created this web app early on in my code practice.",
   deployed: "The app was deployed using GitHub Pages.",
   packages: "Bootstrap, HTML, CSS, JavaScript, and jQuery",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 },
 {
   id: 9,
@@ -153,7 +154,7 @@ const projects = [
   role: "I created this app very early on as a way to practice basic JavaScript and jQuery.  The short, multiple choice trivia game uses basic logic, time management, and scoring capabilities.",
   deployed: "The app was deployed on GitHub Pages.",
   packages: "HTML, CSS, JavaScript, and jQuery.",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 },
 {
   id: 10,
@@ -168,7 +169,7 @@ const projects = [
   role: "Client web site designed to their specifications.  Client already has the domain and plateform, but I was tasked with designing the site.",
   deployed: "The website was created on SquareSpaces.com.",
   packages: "None required",
-  icons: ""
+  // icons: ""
 },
 {
   id: 11,
@@ -183,7 +184,7 @@ const projects = [
   role: "Client web site designed to their specifications.  Client already has the domain and plateform, but I was tasked with designing the site.",
   deployed: "The website was created on SquareSpaces.com.",
   packages: "None required",
-  icons: ""
+  // icons: ""
 },
 {
   id: 12,
@@ -194,41 +195,41 @@ const projects = [
   imageAlt: "NYReact Image",
   link: "https://github.com/BETH-A/Memory-Game",
   app: "https://nytreact-ba.herokuapp.com/",
-  description: "Retrieve New York Times news stories via API.",
+  description: "Retrieve news stories from the New York Times archives for a specific keyword and time frame using an API.",
   role: "App was created to practice REST APIs.",
   deployed: "The app was deployed on Heroku.",
   packages: "React, Express.js, MongoDB",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 },
 {
   id: 13,
   avatarIcon: <WebAssetIcon style={{fontSize: 30}}/>,
   name: "Natours",
   subtitle: "Website SASS Application",
-  image: nyReactImg,
+  image: natoursImg,
   imageAlt: "Natours Image",
   link: "https://github.com/BETH-A/Natours",
   app: "https://beth-a.github.io/Natours/",
-  description: "This Nature Excursions inspired website was created as part of an online course ADVANCED CSS & SASS on Udemy.com. Using HTML, CSS, and SASS this site was created as a playground to learn advanced styling techniques.",
-  role: "Created this website as a way to practice 7-1 SASS Architecture, SASS Mixins/Variables/Components, and Mobile Responsiveness using Media Queries Manager.",
+  description: "Nature Tour inspired website was created this website as a way to practice 7-1 SASS Architecture and a Media Queries Manager.",
+  role: "Created as part of an online course ADVANCED CSS & SASS on Udemy.com. Using HTML, CSS, and SASS this site was created as a playground to learn advanced styling techniques.",
   deployed: "The app was deployed on GitHub Pages.",
   packages: "HTML5, SASS, Node",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 },
 {
   id: 14,
   avatarIcon: <WebAssetIcon style={{fontSize: 30}}/>,
   name: "Nexter",
   subtitle: "Website SASS Application",
-  image: nyReactImg,
+  image: nexterImg,
   imageAlt: "Nexter Image",
   link: "https://github.com/BETH-A/Nexter",
   app: "https://beth-a.github.io/Nexter/",
-  description: "This Real Estate inspired website was created as part of an online course ADVANCED CSS & SASS on Udemy.com. Using HTML, CSS, and SASS this site was created as a playground to learn advanced styling techniques.",
-  role: "Used this project to learn to use the power of CSS Grids.",
+  description: "Real Estate inspired website was used to learn to use the power of SASS and CSS Grids.",
+  role: "Created as part of an online course ADVANCED CSS & SASS on Udemy.com. Using HTML, CSS, and SASS this site was created as a playground to learn advanced styling techniques.",
   deployed: "The app was deployed on GitHub Pages.",
   packages: "HTML5, SASS, Node, CSS Grids",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 },
 {
   id: 15,
@@ -243,7 +244,7 @@ const projects = [
   role: "App was created to practice REST APIs.",
   deployed: "The app was deployed on Heroku.",
   packages: "React, Express.js, MongoDB",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 },
 {
   id: 16,
@@ -258,7 +259,7 @@ const projects = [
   role: "App was created to practice REST APIs.",
   deployed: "The app was deployed on Heroku.",
   packages: "React, Express.js, MongoDB",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 },
 {
   id: 17,
@@ -273,21 +274,22 @@ const projects = [
   role: "App was created to practice REST APIs.",
   deployed: "The app was deployed on Heroku.",
   packages: "React, Express.js, MongoDB",
-  icons: <SecretsIcons />
+  // icons: <SecretsIcons />
 }
+//  PROJECT TEMPLATE
 // {
-//   id: 12,
+//   id: ,
 //   avatarIcon: <WebIcon style={{fontSize: 30}}/>,
-//   name: "NY Times React Scrapper",
-//   subtitle: "Web Application",
-//   image: nyReactImg,
-//   imageAlt: "NYReact Image",
-//   link: "https://github.com/BETH-A/Memory-Game",
-//   app: "https://nytreact-ba.herokuapp.com/",
-//   description: "Retrieve New York Times news stories via API.",
-//   role: "App was created to practice REST APIs.",
-//   deployed: "The app was deployed on Heroku.",
-//   packages: "React, Express.js, MongoDB",
+//   name: "",
+//   subtitle: "",
+//   image: ,
+//   imageAlt: "",
+//   link: "https://github.com/BETH-A/",
+//   app: "",
+//   description: "",
+//   role: "",
+//   deployed: "The app was deployed on.",
+//   packages: "",
 //   icons: <SecretsIcons />
 // }
 ]

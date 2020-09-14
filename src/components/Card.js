@@ -131,7 +131,7 @@ export default function ProjectCard(props) {
             <Typography paragraph variant="body1" color="textSecondary" component="img">
               {/* {props.icons} */}
             </Typography>
-            <KeeperIcons /> 
+            {/* <KeeperIcons />  */}
           </CardContent>
         </Collapse>
       </Card>
