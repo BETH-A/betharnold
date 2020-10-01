@@ -5,7 +5,6 @@ import expressIcon from "../assets/icons/icon-expressjs.png";
 import reactIcon from "../assets/icons/icons8-react-native-50.png";
 
 
-
 function SecretsIcons () {
     return(
         <div className="icons">
